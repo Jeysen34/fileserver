@@ -62,7 +62,7 @@
                         <div class="modal-dialog modal-dialog-centered">
                           <div class="modal-content">
                             <div class="modal-body p-0">
-                              <img src="/img/s0.png" class="img-fluid" alt="Proxmox VE Installer">
+                              <img src="img/s0.png" class="img-fluid" alt="Proxmox VE Installer">
                             </div>
                           </div>
                         </div>
@@ -70,12 +70,12 @@
                     <p>Next, To ensure the Proxmox host always uses the same IP address (static), a DHCP reservation was created on the router. This was done by locating the computer’s MAC address, which runs the Proxmox server in the router’s DHCP client list, and assigning it a reserved IP address. The exact steps may vary depending on the router you have, but the process is generally straightforward. Using a static IP address is important for Proxmox, as it ensures consistent access to the web interface. It also makes it easier to assign additional static IP addresses later, for example, when creating the Ubuntu Server VM. </p>
 
                     <p>PuTTY was also used to ensure I could successfully remote into the Proxmox environment, as shown here.<br></p>
-                    <img src="/img/s2.png" style="width: 30rem; cursor: pointer;" alt="PuTTY" data-bs-toggle="modal" data-bs-target="#imageModal2">
+                    <img src="img/s2.png" style="width: 30rem; cursor: pointer;" alt="PuTTY" data-bs-toggle="modal" data-bs-target="#imageModal2">
                     <div class="modal" id="imageModal2" tabindex="-1" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                           <div class="modal-body p-0">
-                            <img src="/img/s2.png" class="img-fluid" alt="PuTTY">
+                            <img src="img/s2.png" class="img-fluid" alt="PuTTY">
                           </div>
                         </div>
                       </div>
@@ -83,12 +83,12 @@
                     <br> <br>
                     <h4 class="text-decoration-underline">Web Interface</h4>
                     <p>With the Proxmox installation complete and the network configured, the web interface can be accessed through a web browser using the static IP address as seen here.<br>
-                      <img src="/img/s1.png" style="width: 30rem; cursor: pointer;" alt="web interface" data-bs-toggle="modal" data-bs-target="#imageModal1">
+                      <img src="img/s1.png" style="width: 30rem; cursor: pointer;" alt="web interface" data-bs-toggle="modal" data-bs-target="#imageModal1">
                       <div class="modal" id="imageModal1" tabindex="-1" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered">
                           <div class="modal-content">
                             <div class="modal-body p-0">
-                              <img src="/img/s1.png" class="img-fluid" alt="web interface">
+                              <img src="img/s1.png" class="img-fluid" alt="web interface">
                             </div>
                           </div>
                         </div>
@@ -96,23 +96,23 @@
                       Upon logging in, the initial step was to check for any available system updates and apply them. After updating, the Proxmox VE host was rebooted to ensure all changes were fully applied.
                     </p>
                     <p>A Dell OptiPlex 3050 was used for this setup which I made sure to include two storage devices: an SSD which is used to store the Proxmox VE environment and an NVMe drive, totaling to 1TB of capacity. This provides sufficient space for initial testing and deployment, though additional storage will likely be required later as the file server grows and as other services such as a media server are added to the Proxmox environment. Before configuring storage in Proxmox, the secondary drive intended for use with the file server was wiped. After clearing the device, the Proxmox storage directory was accessed to create the new disk resource as shown below.</p>
-                    <img src="/img/s4.png" style="width: 30rem; cursor: pointer;" alt="disc" data-bs-toggle="modal" data-bs-target="#imageModal4">
+                    <img src="img/s4.png" style="width: 30rem; cursor: pointer;" alt="disc" data-bs-toggle="modal" data-bs-target="#imageModal4">
                     <div class="modal" id="imageModal4" tabindex="-1" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                           <div class="modal-body p-0">
-                            <img src="/img/s4.png" class="img-fluid" alt="disc">
+                            <img src="img/s4.png" class="img-fluid" alt="disc">
                           </div>
                         </div>
                       </div>
                     </div>
                     <p><br>FYI, adding more storage is a perk of having proxmox available as shown below</p>
-                    <img src="/img/s16.png" style="width: 30rem; cursor: pointer;" alt="storageprox" data-bs-toggle="modal" data-bs-target="#imageModal16">
+                    <img src="img/s16.png" style="width: 30rem; cursor: pointer;" alt="storageprox" data-bs-toggle="modal" data-bs-target="#imageModal16">
                     <div class="modal" id="imageModal16" tabindex="-1" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered">
                         <div class="modal-content">
                           <div class="modal-body p-0">
-                            <img src="/img/s16.png" class="img-fluid" alt="storageprox">
+                            <img src="img/s16.png" class="img-fluid" alt="storageprox">
                           </div>
                         </div>
                       </div>
@@ -121,12 +121,12 @@
                     <h4 class="text-decoration-underline">Uploading an ISO File</h4>
                     <h5>Step 1: Upload ISO Image</h5>
                   <p> To upload the installation ISO, open the Proxmox web interface and select the storage location (local or local-lvm). Next, navigate to the ISO Images and click Upload to upload the ISO file from your computer as shown here.</p>
-                  <img src="/img/s5.png" style="width: 30rem; cursor: pointer;" alt="iso upload" data-bs-toggle="modal" data-bs-target="#imageModal5">
+                  <img src="img/s5.png" style="width: 30rem; cursor: pointer;" alt="iso upload" data-bs-toggle="modal" data-bs-target="#imageModal5">
                   <div class="modal" id="imageModal5" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-body p-0">
-                          <img src="/img/s5.png" class="img-fluid" alt="iso upload">
+                          <img src="img/s5.png" class="img-fluid" alt="iso upload">
                         </div>
                       </div>
                     </div>
@@ -134,34 +134,34 @@
                   <br> <br>
                   <h5>Step 2: Create the Virtual Machine</h5>
                   <p> After uploading the ISO file, create a new virtual machine by selecting "Create VM" in the proxmox interface. Follow the on-screen setup wizard and configure the VM according to your requirements .</p>
-                  <img src="/img/s6.png" style="width: 30rem; cursor: pointer;" alt="vm create" data-bs-toggle="modal" data-bs-target="#imageModal6">
+                  <img src="img/s6.png" style="width: 30rem; cursor: pointer;" alt="vm create" data-bs-toggle="modal" data-bs-target="#imageModal6">
                   <div class="modal" id="imageModal6" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-body p-0">
-                          <img src="/img/s6.png" class="img-fluid" alt="vm create">
+                          <img src="img/s6.png" class="img-fluid" alt="vm create">
                         </div>
                       </div>
                     </div>
                   </div>
                   <br><br>
                   <p>For extra security, a snapshot and a backup of the virtual machine were created, as shown below.</p>
-                  <img src="/img/s7.png" style="width: 30rem; cursor: pointer;" alt="snapshot" data-bs-toggle="modal" data-bs-target="#imageModal7">
+                  <img src="img/s7.png" style="width: 30rem; cursor: pointer;" alt="snapshot" data-bs-toggle="modal" data-bs-target="#imageModal7">
                   <div class="modal" id="imageModal7" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-body p-0">
-                          <img src="/img/s7.png" class="img-fluid" alt="snapshot">
+                          <img src="img/s7.png" class="img-fluid" alt="snapshot">
                         </div>
                       </div>
                     </div>
                   </div>
-                  <img src="/img/s8.png" style="width: 30rem; cursor: pointer;" alt="backup" data-bs-toggle="modal" data-bs-target="#imageModal8">
+                  <img src="img/s8.png" style="width: 30rem; cursor: pointer;" alt="backup" data-bs-toggle="modal" data-bs-target="#imageModal8">
                   <div class="modal" id="imageModal8" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-body p-0">
-                          <img src="/img/s8.png" class="img-fluid" alt="backup">
+                          <img src="img/s8.png" class="img-fluid" alt="backup">
                         </div>
                       </div>
                     </div>
@@ -190,12 +190,12 @@
                   <p><b>One useful thing to note is that when services are installed on Ubuntu Server, their configuration files are typically stored in the /etc directory.</b></p>
                   <h5>Step 2: Configure Samba</h5>
                   <p>A directory was created using <b>mkdir</b>, which represents the name of the file server. Permissions were then configured using <b>sudo chmod -R 0775</b>. In short, chmod stands for “change mode,” and the permission value 0775 grants full read, write, and execute access to the owner and group. The screesnhot below shows permissions that have been set for the file server</p>
-                  <img src="/img/s10.png" style="width: 30rem; cursor: pointer;" alt="perm" data-bs-toggle="modal" data-bs-target="#imageModal10">
+                  <img src="img/s10.png" style="width: 30rem; cursor: pointer;" alt="perm" data-bs-toggle="modal" data-bs-target="#imageModal10">
                   <div class="modal" id="imageModal10" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-body p-0">
-                          <img src="/img/s10.png" class="img-fluid" alt="perm">
+                          <img src="img/s10.png" class="img-fluid" alt="perm">
                         </div>
                       </div>
                     </div>
@@ -238,47 +238,47 @@
                       </div>
                     </div>
                   </div>
-                  <img src="/img/s9.png" style="width: 30rem; cursor: pointer;" alt="fileshare" data-bs-toggle="modal" data-bs-target="#imageModal9">
+                  <img src="img/s9.png" style="width: 30rem; cursor: pointer;" alt="fileshare" data-bs-toggle="modal" data-bs-target="#imageModal9">
                   <div class="modal" id="imageModal9" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-body p-0">
-                          <img src="/img/s9.png" class="img-fluid" alt="fileshare">
+                          <img src="img/s9.png" class="img-fluid" alt="fileshare">
                         </div>
                       </div>
                     </div>
                   </div>
                   <p>Furthermore, a user account was created to access the files, and ownership of the directory was changed to this account using <b>chown -R [account:account][path]</b></p>
-                  <img src="/img/s11.png" style="width: 30rem; cursor: pointer;" alt="sambauser" data-bs-toggle="modal" data-bs-target="#imageModal11">
+                  <img src="img/s11.png" style="width: 30rem; cursor: pointer;" alt="sambauser" data-bs-toggle="modal" data-bs-target="#imageModal11">
                   <div class="modal" id="imageModal11" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-body p-0">
-                          <img src="/img/s11.png" class="img-fluid" alt="sambauser">
+                          <img src="img/s11.png" class="img-fluid" alt="sambauser">
                         </div>
                       </div>
                     </div>
                   </div>
                   <p>After creating the authentication account to access the folder, the Samba service was restarted to apply the changes using the command <b>sudo service smbd restart</b>.</p>
                   <p>To verify that the Samba server is up and running, the command <b>sudo service smbd status</b> was executed. This command shows whether the service is active, inactive, or failed, and in this case, it was active as shown below.</p>
-                  <img src="/img/s14.png" style="width: 30rem; cursor: pointer;" alt="samba check" data-bs-toggle="modal" data-bs-target="#imageModal14">
+                  <img src="img/s14.png" style="width: 30rem; cursor: pointer;" alt="samba check" data-bs-toggle="modal" data-bs-target="#imageModal14">
                   <div class="modal" id="imageModal14" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-body p-0">
-                          <img src="/img/s14.png" class="img-fluid" alt="samba check">
+                          <img src="img/s14.png" class="img-fluid" alt="samba check">
                         </div>
                       </div>
                     </div>
                   </div>
                   <br><br>
                   <p>Finally, the firewall was updated to allow Samba traffic by running the command <b>sudo ufw allow samba</b>. Afterward, running the command <b>sudo ufw status</b> confirmed that Samba traffic is allowed.</p>
-                  <img src="/img/s12.png" style="width: 30rem; cursor: pointer;" alt="firewall" data-bs-toggle="modal" data-bs-target="#imageModal12">
+                  <img src="img/s12.png" style="width: 30rem; cursor: pointer;" alt="firewall" data-bs-toggle="modal" data-bs-target="#imageModal12">
                   <div class="modal" id="imageModal12" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-body p-0">
-                          <img src="/img/s12.png" class="img-fluid" alt="firewall">
+                          <img src="img/s12.png" class="img-fluid" alt="firewall">
                         </div>
                       </div>
                     </div>
@@ -296,24 +296,24 @@
                 <div class="accordion-body">
                   <h4 class="text-decoration-underline">Windows</h4>
                   <p>To test the setup, both Windows and macOS were used. Below are the results for each system. On Windows, File Explorer was opened, then This PC was selected from the left hand side. From there, a network folder was added by right-clicking and entering <strong>\\[ipaddress]\fileshare</strong></p>
-                  <img src="/img/s13.png" style="width: 30rem; cursor: pointer;" alt="win dep" data-bs-toggle="modal" data-bs-target="#imageModal13">
+                  <img src="img/s13.png" style="width: 30rem; cursor: pointer;" alt="win dep" data-bs-toggle="modal" data-bs-target="#imageModal13">
                   <div class="modal" id="imageModal13" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-body p-0">
-                          <img src="/img/s13.png" class="img-fluid" alt="win dep">
+                          <img src="img/s13.png" class="img-fluid" alt="win dep">
                         </div>
                       </div>
                     </div>
                   </div>
                   <h4 class="text-decoration-underline">macOS</h4>
                   <p>On macOS, the Go menu (located at the top of the desktop) was used, followed by Connect to Server, where <strong>smb://[ipaddress]/fileshare</strong> was entered.</p>
-                  <img src="/img/s15.png" style="width: 30rem; cursor: pointer;" alt="mac dep" data-bs-toggle="modal" data-bs-target="#imageModal15">
+                  <img src="img/s15.png" style="width: 30rem; cursor: pointer;" alt="mac dep" data-bs-toggle="modal" data-bs-target="#imageModal15">
                   <div class="modal" id="imageModal15" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-body p-0">
-                          <img src="/img/s15.png" class="img-fluid" alt="mac dep">
+                          <img src="img/s15.png" class="img-fluid" alt="mac dep">
                         </div>
                       </div>
                     </div>
@@ -322,12 +322,12 @@
                   <h4 class="text-decoration-underline">Troubleshooting</h4>
                   <h6 class="text-decoration-underline">Issue 1: Proxmox – disk/partition '/dev/sda2' is mounted (500)</h6>
                   <p>I tried to wipe a disk in Proxmox and was receiving the error “disk/partition ‘/dev/sda2’ is mounted (500)”. After doing some research, I realized that because the Proxmox installation itself is on this disk, it cannot be wiped. The solution was to install an NVMe drive, which the OptiPlex 3050 has a slot for, and this resolved the issue. Below is the message that I was receiving. <a href="https://www.diy-viking.com/proxmox-disk-partition-has-a-holder/" target="_blank" >DIY-Viking</a> was the source of where I was able to find a solution to this issue.</p>
-                  <img src="/img/s3.png" style="width: 30rem; cursor: pointer;" alt="mounted500" data-bs-toggle="modal" data-bs-target="#imageModal3">
+                  <img src="img/s3.png" style="width: 30rem; cursor: pointer;" alt="mounted500" data-bs-toggle="modal" data-bs-target="#imageModal3">
                   <div class="modal" id="imageModal3" tabindex="-1" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered">
                       <div class="modal-content">
                         <div class="modal-body p-0">
-                          <img src="/img/s3.png" class="img-fluid" alt="mounted500">
+                          <img src="img/s3.png" class="img-fluid" alt="mounted500">
                         </div>
                       </div>
                     </div>
